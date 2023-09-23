@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="musicIcon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="main">
+        <div class="imageArea">
+            <img src="" alt="album">
+        </div>
+        <div class="songDetails">
+            <p class="songName"></p>
+            <p class="artistName"></p>
+        </div>
+        <div class="progressArea">
+            <div class="progressBar">
+                <span></span>
+            </div>
+            <div class="timer">
+                <p class="currentTime">0:00</p>
+                <p class="endTime"></p>
+            </div>
+
+            <audio id="audioFile" src=""></audio>
+        </div>
+        <div class="controls">
+            <i id="loopPlaylist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id="prevTrack" class="material-icons">skip_previous</i>
+            <div class="playPause">
+                <i class="material-icons">play_arrow</i>
+            </div>
+            <i id="nextTrack" class="material-icons">skip_next</i>
+            <i id="musicPlaylist" class="material-icons">queue_music</i>
+        </div>
+        <div class="musicList">
+            <div class="header">
+              <div class="row">
+                <i class= "list material-icons">queue_music</i>
+                <p>Music list</p>
+              </div>
+              <i id="close" class="material-icons">close</i>
+            </div>
+            <ul>
+              <!-- here li list are coming from js -->
+            </ul>
+          </div>
+        </div>
+    </div>
+    <script src="/javascript/musicList.js"></script>
+    <script src="/javascript/script.js"></script>
+</body>
+</html>
